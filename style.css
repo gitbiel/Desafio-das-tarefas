@@ -7,6 +7,17 @@
   display: flex;
 }
 
+.card {
+  height: 100vh;
+  width: 512px;
+  background-color: #2B2B2B;
+  margin-right: 4px;
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
 .header {
   height: 100px;
   width: 100%;
@@ -14,6 +25,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.header > h2 {
+  margin: 160px;
 }
 
 .elementsHeader {
@@ -28,28 +43,6 @@
   color: #18C29C;
 }
 
-.header > h2 {
-  margin: 160px;
-}
-
-.card {
-  height: 100vh;
-  width: 512px;
-  background-color: #2B2B2B;
-  margin-right: 4px;
-}
-
-.card:last-child {
-  margin-right: 0;
-}
-
-.iconCreate {
-  height: 50px;
-  width: 50px;
-  margin: 30px;
-  cursor: pointer;
-}
-
 .createNewItem {
   display: flex;
   align-items: center;
@@ -58,8 +51,11 @@
   background-color: transparent;
 }
 
-.createNewItem > p {
-  background-color: transparent;
+.iconCreate {
+  height: 50px;
+  width: 50px;
+  margin: 30px;
+  cursor: pointer;
 }
 
 .cardCreated {
@@ -71,16 +67,26 @@
   flex-flow: wrap;
 }
 
+.cardCreated > h2 {
+  padding: 50px 0 0 30px;
+  font-size: 40px;
+  color: #fff;
+}
+
 .column {
   height: 100%;
   width: 5px;
   background-color: #88F9D4;
 }
 
-.cardCreated > h2 {
-  padding: 50px 0 0 30px;
-  font-size: 40px;
-  color: #fff;
+.containerCard {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.createNewItem > p {
+  background-color: transparent;
 }
 
 .cardCreated > svg {

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio das Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="header">
+        <h2 class="elementsHeader">To do</h2>
+        <p class="elementsHeader"><span class="specialCharacter">1</span>/5</p>
+      </div>
+
+      <div class="createNewItem">
+        <svg class="iconCreate" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="14" height="14" fill="#9AE162"/>
+          <rect x="6" y="2" width="2" height="10" fill="white"/>
+          <rect x="12" y="6" width="2" height="10" transform="rotate(90 12 6)" fill="white"/>
+          </svg>
+          <p>New item</p>
+      </div>
+
+      <div class="cardCreated">
+        <div class="column"></div>
+        <h2>Treinar
+          <p>Type</p>
+          <select name="name">
+            <option value="saude" selected>Saúde</option>
+            <option value="carreira" >Carreira</option>
+            <option value="domestica">Domestica</option>
+          </select>
+        </h2>
+        <svg class="config" width="2" height="8" viewBox="0 0 2 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="1" cy="1" r="1" fill="#D9D9D9"/>
+          <circle cx="1" cy="4" r="1" fill="#D9D9D9"/>
+          <circle cx="1" cy="7" r="1" fill="#D9D9D9"/>
+        </svg>
+        
+          
+      </div>
+        
+    </div>
+    <div class="card">
+      <div class="header">
+        <h2 class="elementsHeader">Doing</h2>
+        <p class="elementsHeader">0/5</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">
+        <h2 class="elementsHeader">Done</h2>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

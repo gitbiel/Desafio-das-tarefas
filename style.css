@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  background-color: #414141;
+}
+
+.container {
+  display: flex;
+}
+
+.header {
+  height: 100px;
+  width: 100%;
+  background-color: #181818;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.elementsHeader {
+  background-color: transparent;
+  color: #fff;
+  font-size: 35px;
+}
+
+.specialCharacter {
+  font-size: 60px;
+  background-color: transparent;
+  color: #18C29C;
+}
+
+.header > h2 {
+  margin: 160px;
+}
+
+.card {
+  height: 100vh;
+  width: 512px;
+  background-color: #2B2B2B;
+  margin-right: 4px;
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+.iconCreate {
+  height: 50px;
+  width: 50px;
+  margin: 30px;
+  cursor: pointer;
+}
+
+.createNewItem {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 30px;
+  background-color: transparent;
+}
+
+.createNewItem > p {
+  background-color: transparent;
+}
+
+.cardCreated {
+  height: 420px;
+  width: 400px;
+  background-color: #414141;
+  margin: 10px 0 0 30px;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.column {
+  height: 100%;
+  width: 5px;
+  background-color: #88F9D4;
+}
+
+.cardCreated > h2 {
+  padding: 50px 0 0 30px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.cardCreated > svg {
+  padding: 15px 10px 0 210px;
+  height: 30px;
+  width: 10px; 
+}
+
+
+
+
+
+
+

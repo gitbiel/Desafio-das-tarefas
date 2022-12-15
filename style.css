@@ -51,6 +51,10 @@
   background-color: transparent;
 }
 
+.createNewItem > p {
+  background-color: transparent;
+} 
+
 .iconCreate {
   height: 50px;
   width: 50px;
@@ -64,13 +68,6 @@
   background-color: #414141;
   margin: 10px 0 0 30px;
   display: flex;
-  flex-flow: wrap;
-}
-
-.cardCreated > h2 {
-  padding: 50px 0 0 30px;
-  font-size: 40px;
-  color: #fff;
 }
 
 .column {
@@ -79,25 +76,55 @@
   background-color: #88F9D4;
 }
 
-.containerCard {
+.elements {
+  height: 360px;
+  width: 280px;
+  padding-bottom: 200px;
+  padding: 30px;
+}
+
+.elements > h2 {
+  margin: 30px 0 30px 0;
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.elements > .type {
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.elements > select {
+  height: 30px;
+  width: 220px;
+  margin-bottom: 50px;
+  background-color: #fff;
+}
+
+.elements > .paragraphCard {
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.setings {
   display: flex;
   flex-direction: column;
-  margin: 30px;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 15px 0 0 30px;
+  height: 405px;
+  width: 15px;
 }
 
-.createNewItem > p {
-  background-color: transparent;
+.setings > svg {
+  height: 25px;
+  width: 25px;
 }
 
-.cardCreated > svg {
-  padding: 15px 10px 0 210px;
-  height: 30px;
-  width: 10px; 
+.setings > p {
+  color: #fff;
+  padding-bottom: 10px;
 }
-
-
-
-
-
-
-

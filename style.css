@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
 * {
   margin: 0;
+  font-family: Open Sans;
+}
+
+.backgroundColorCard {
   background-color: #414141;
 }
 
@@ -83,6 +89,17 @@
   padding: 30px;
 }
 
+.fundo {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  height: 30px;
+  width: 240px;
+  color: #000;
+  background-color: #fff;
+  margin: 10px 0 10px 0;
+}
+
 .elements > h2 {
   margin: 30px 0 30px 0;
   font-size: 30px;
@@ -101,9 +118,11 @@
   width: 220px;
   margin-bottom: 50px;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .elements > .paragraphCard {
+  width: 340px;
   font-size: 20px;
   color: #fff;
   letter-spacing: 1px;
@@ -122,9 +141,82 @@
 .setings > svg {
   height: 25px;
   width: 25px;
+  cursor: pointer;
 }
 
 .setings > p {
   color: #fff;
   padding-bottom: 10px;
+}
+
+.backgroundColorModal {
+  height: 100vh;
+  background-color: #00000030;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.modalContainer {
+  height: 430px;
+  width: 510px;
+  border: 1px solid;
+  border-radius: 8px;
+  background-color: #EDEDED;
+}
+
+.modalContainer > h2  {
+  margin: 0 0 32px 32px;
+}
+
+.modalContainer > p {
+  margin: 15px 0 10px 32px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+.closeModalContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.closeModal {
+  width: 26px;
+  height: 26px;
+  background-color: #D04A4A;
+  border-radius: 50%;
+  margin: 16px 13px 0 0;
+  cursor: pointer;
+}
+
+.inputType {
+  width: 430px;
+  height: 40px;
+  border: 2px solid black;
+  margin-left: 32px;
+  border-radius: 8px;
+  padding-left: 16px;
+}
+
+.typeOfTask {
+  margin: 0 0 15px 32px;
+  background-color: #D9D9D9;
+  height: 30px;
+  width: 210px;
+}
+
+.btnConfirmarModal {
+  margin: 20px 0 0 0;
+  width: 452px;
+  height: 46px;
+  background-color: rgb(62, 62, 255);
+  color: #FFF;
+  margin-left: 32px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
 }

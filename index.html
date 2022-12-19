@@ -6,59 +6,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Desafio das Tarefas</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="container">
-    <div class="card">
-      <div class="header">
-        <h2 class="elementsHeader">To do</h2>
-        <p class="elementsHeader"><span class="specialCharacter">1</span>/5</p>
-      </div>
-
-      <div class="createNewItem">
-        <svg class="iconCreate" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="14" height="14" fill="#9AE162"/>
-          <rect x="6" y="2" width="2" height="10" fill="white"/>
-          <rect x="12" y="6" width="2" height="10" transform="rotate(90 12 6)" fill="white"/>
-          </svg>
-          <p>New item</p>
-      </div>
-
-      <div class="cardCreated">
-        <div class="column"></div>
-        <div class="elements">
-          <h2>Treinar</h2>
-          <p class="type">Type:</p>
-          <select name="name">
-            <option value="saude" selected>Saúde</option>
-            <option value="carreira" >Carreira</option>
-            <option value="domestica">Domestica</option>
-          </select>
-          <p class="paragraphCard">Treino insado de peito, porque
-            sentimentos ninguém vê mas um 
-            peitoral gigante sim!</p>
+  <div class="backgroundColorCard">
+    <div class="container">
+      <div class="card">
+        <div class="header">
+          <h2 class="elementsHeader">To do</h2>
+          <p class="elementsHeader"><span class="specialCharacter">1</span>/5</p>
         </div>
-        <div class="setings">
-          <svg width="2" height="8" viewBox="0 0 2 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="1" cy="1" r="1" fill="#D9D9D9"/>
-            <circle cx="1" cy="4" r="1" fill="#D9D9D9"/>
-            <circle cx="1" cy="7" r="1" fill="#D9D9D9"/>
-          </svg> 
-          <p>01</p>
+
+        <div class="createNewItem" onclick="openModal()">
+          <svg class="iconCreate" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="14" height="14" fill="#9AE162"/>
+            <rect x="6" y="2" width="2" height="10" fill="white"/>
+            <rect x="12" y="6" width="2" height="10" transform="rotate(90 12 6)" fill="white"/>
+            </svg>
+            <p>New item</p>
+        </div>
+
+        <div class="cardCreated">
+          <div class="column"></div>
+          <div class="elements">
+            <h2>Treinar</h2>
+            <p class="type">Type:</p>
+            <div class="fundo">
+              <p>Saúde</p>
+            </div>
+            <p class="paragraphCard">Treino insado de peito, porque
+              sentimentos ninguém vê mas um 
+              peitoral gigante sim!</p>
+          </div>
+          <div class="setings">
+            <svg width="2" height="8" viewBox="0 0 2 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="1" cy="1" r="1" fill="#D9D9D9"/>
+              <circle cx="1" cy="4" r="1" fill="#D9D9D9"/>
+              <circle cx="1" cy="7" r="1" fill="#D9D9D9"/>
+            </svg> 
+            <p>01</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="header">
+          <h2 class="elementsHeader">Doing</h2>
+          <p class="elementsHeader">0/5</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="header">
+        <h2 class="elementsHeader">Done</h2>
         </div>
       </div>
     </div>
-    
-    <div class="card">
-      <div class="header">
-        <h2 class="elementsHeader">Doing</h2>
-        <p class="elementsHeader">0/5</p>
+  </div>
+
+  <div class="backgroundColorModal">
+    <div class="modalContainer">
+      <div class="closeModalContainer" onclick="closeModal()">
+        <svg class="closeModal" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="15.981" y="5.56293" width="1.73333" height="14.7333" rx="0.866667" transform="rotate(45 15.981 5.56293)" fill="white"/>
+          <rect x="17.2068" y="15.981" width="1.73333" height="14.7333" rx="0.866667" transform="rotate(135 17.2068 15.981)" fill="white"/>
+        </svg>
       </div>
-    </div>
-    <div class="card">
-      <div class="header">
-      <h2 class="elementsHeader">Done</h2>
-      </div>
+      <h2>Criar Novo card</h2>
+      <input class="inputType" type="text" placeholder="Title">
+      <p>Tipo da Tarefa:</p>
+      <select class="typeOfTask" name="name">
+        <option value="saude" selected>Saúde</option>
+        <option value="carreira" >Carreira</option>
+        <option value="domestica">Domestica</option>
+        <option value="domestica">Entretenimento</option>
+      </select>
+      <input class="inputType" type="text" placeholder="Description">
+      <button class="btnConfirmarModal">Confirmar</button>
     </div>
   </div>
 </body>

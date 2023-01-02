@@ -26,26 +26,28 @@
             <p>New item</p>
         </div>
 
-        <div class="cardCreated">
-          <div class="column"></div>
-          <div class="elements">
-            <h2>Treinar</h2>
-            <p class="type">Type:</p>
-            <div class="fundo">
-              <p>Saúde</p>
+        <div id="areaCard" class="containerCard">
+          <!-- <div class="cardCreated">
+            <div class="column"></div>
+            <div class="elements">
+              <h2>Treinar</h2>
+              <p class="type">Type:</p>
+              <div class="fundo">
+                <p>Saúde</p>
+              </div>
+              <p class="paragraphCard">Treino insado de peito, porque
+                sentimentos ninguém vê mas um 
+                peitoral gigante sim!</p>
             </div>
-            <p class="paragraphCard">Treino insado de peito, porque
-              sentimentos ninguém vê mas um 
-              peitoral gigante sim!</p>
-          </div>
-          <div class="setings">
-            <svg width="2" height="8" viewBox="0 0 2 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="1" cy="1" r="1" fill="#D9D9D9"/>
-              <circle cx="1" cy="4" r="1" fill="#D9D9D9"/>
-              <circle cx="1" cy="7" r="1" fill="#D9D9D9"/>
-            </svg> 
-            <p>01</p>
-          </div>
+            <div class="setings">
+              <svg width="2" height="8" viewBox="0 0 2 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="1" cy="1" r="1" fill="#D9D9D9"/>
+                <circle cx="1" cy="4" r="1" fill="#D9D9D9"/>
+                <circle cx="1" cy="7" r="1" fill="#D9D9D9"/>
+              </svg> 
+              <p>01</p>
+            </div>
+          </div> -->
         </div>
       </div>
       
@@ -72,7 +74,7 @@
         </svg>
       </div>
       <h2>Criar Novo card</h2>
-      <input class="inputType" type="text" placeholder="Title">
+      <input id="titleModal" class="inputType" type="text" placeholder="Title">
       <p>Tipo da Tarefa:</p>
       <select class="typeOfTask" name="name">
         <option value="saude" selected>Saúde</option>
@@ -80,8 +82,8 @@
         <option value="domestica">Domestica</option>
         <option value="domestica">Entretenimento</option>
       </select>
-      <input class="inputType" type="text" placeholder="Description">
-      <button class="btnConfirmarModal">Confirmar</button>
+      <input id="inputModal" class="inputType" type="text" placeholder="Description">
+      <button class="btnConfirmarModal" onclick="createCard()">Confirmar</button>
     </div>
   </div>
 </body>

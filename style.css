@@ -14,10 +14,11 @@
 }
 
 .card {
-  height: 100vh;
+  min-height: 100vh;
   width: 512px;
   background-color: #2B2B2B;
   margin-right: 4px;
+  padding-bottom: 40px;
 }
 
 .card:last-child {

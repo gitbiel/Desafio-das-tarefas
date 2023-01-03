@@ -3,13 +3,12 @@ const modal = document.querySelector(".backgroundColorModal");
 const btnCloseModal = document.querySelector(".closeModalContainer");
 const toDoList = document.querySelector(".backgroundColorCard");
 const inputTitleModal = document.querySelector(".inputType");
-
 const containerCard = document.querySelector(".containerCard");
-
-let inputModal = document.getElementById('inputModal')
-let inputTitle = document.getElementById('titleModal')
-
 const main = document.getElementById('areaCard');
+let inputModal = document.getElementById('inputModal');
+let inputTitle = document.getElementById('titleModal');
+let inputSelect = document.getElementById('selectModal');
+let counter = 0;
 
 function openModal() {
   modal.style.display = "flex";
@@ -25,15 +24,19 @@ function closeModal() {
 function createCard() {
   let valorInputTilte = inputTitle.value;
   let valorInput = inputModal.value;
-  
-  if ((valorInput !== "") && (valorInput !==null) && (valorInput!== undefined));
-  let newCard = `<div class="cardCreated">
+  let valorInputModal = inputSelect.value;
+
+  // if ((valorInput !== "") && (valorInput !==null) && (valorInput!== undefined));
+  // if ((valorInputTilte !== "") && (valorInputTilte !==null) && (valorInputTilte!== undefined));
+  ++counter;
+  let newCard = 
+  `<div class="cardCreated">
   <div class="column"></div>
   <div class="elements">
-    ${valorInputTilte}
+    <div class="titleModal">${valorInputTilte}</div>
     <p class="type">Type:</p>
     <div class="fundo">
-      <p>Saúde</p>
+      ${valorInputModal}  
     </div>
       ${valorInput}
   </div>
@@ -43,7 +46,8 @@ function createCard() {
       <circle cx="1" cy="4" r="1" fill="#D9D9D9"/>
       <circle cx="1" cy="7" r="1" fill="#D9D9D9"/>
     </svg> 
-    <p>01</p>
+    <p id="counter">0${counter}
+    </p>
   </div>
   </div>`;
 

@@ -88,6 +88,11 @@
   width: 280px;
   padding-bottom: 200px;
   padding: 30px;
+  color: #FFF;
+}
+
+.titleModal {
+  font-size: 30px;
 }
 
 .fundo {
@@ -101,7 +106,7 @@
   margin: 10px 0 10px 0;
 }
 
-.elements > h2 {
+/* .elements > h2 {
   margin: 30px 0 30px 0;
   font-size: 30px;
   color: #fff;
@@ -127,7 +132,7 @@
   font-size: 20px;
   color: #fff;
   letter-spacing: 1px;
-}
+}  */
 
 .setings {
   display: flex;
@@ -199,14 +204,14 @@
   margin-left: 32px;
   border-radius: 8px;
   padding-left: 16px;
-}
+} 
 
 .typeOfTask {
   margin: 0 0 15px 32px;
   background-color: #D9D9D9;
   height: 30px;
   width: 210px;
-}
+} 
 
 .btnConfirmarModal {
   margin: 20px 0 0 0;
@@ -220,4 +225,4 @@
   font-weight: 600;
   letter-spacing: 1px;
   cursor: pointer;
-}
+} 

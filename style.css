@@ -80,7 +80,6 @@
 .column {
   height: 100%;
   width: 5px;
-  background-color: #88F9D4;
 }
 
 .elements {
@@ -89,10 +88,6 @@
   padding-bottom: 200px;
   padding: 30px;
   color: #FFF;
-}
-
-.titleModal {
-  font-size: 30px;
 }
 
 .fundo {
@@ -106,33 +101,17 @@
   margin: 10px 0 10px 0;
 }
 
-/* .elements > h2 {
+.titleCard {
   margin: 30px 0 30px 0;
   font-size: 30px;
-  color: #fff;
+  margin-bottom: 30px;
   letter-spacing: 2px;
 }
-
-.elements > .type {
-  color: #fff;
+ 
+.type {
   font-size: 25px;
   margin-bottom: 10px;
 }
-
-.elements > select {
-  height: 30px;
-  width: 220px;
-  margin-bottom: 50px;
-  background-color: #fff;
-  cursor: pointer;
-}
-
-.elements > .paragraphCard {
-  width: 340px;
-  font-size: 20px;
-  color: #fff;
-  letter-spacing: 1px;
-}  */
 
 .setings {
   display: flex;

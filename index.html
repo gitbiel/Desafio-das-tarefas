@@ -14,7 +14,8 @@
       <div class="card">
         <div class="header">
           <h2 class="elementsHeader">To do</h2>
-          <p class="elementsHeader"><span class="specialCharacter">0</span>/5</p>
+          <p class="elementsHeader" id="toDo"></p>
+          <p class="elementsHeader">/5</p>
         </div>
 
         <div class="createNewItem" onclick="openModal()">
@@ -25,7 +26,7 @@
             </svg>
             <p>New item</p>
         </div>
-        <div id="areaCard" class="containerCard">
+        <div id="containerToDo" class="containerCard">
         </div>
       </div>
       
@@ -54,11 +55,11 @@
       <h2>Criar Novo card</h2>
       <input id="titleModal" class="inputType" type="text" placeholder="Title">
       <p>Tipo da Tarefa:</p>
-      <select id="selectModal" class="typeOfTask" name="name">
-        <option value="saude" selected>Saúde</option>
-        <option value="carreira" >Carreira</option>
-        <option value="domestica">Domestica</option>
-        <option value="domestica">Entretenimento</option>
+      <select id="selectModal" class="typeOfTask">
+        <option value="Saúde, #88F9D4" selected>Saúde</option>
+        <option value="Carreira, #F3F653" >Carreira</option>
+        <option value="Domestica, #9D88F0">Domestica</option>
+        <option value="Domestica, #FF5F23">Entretenimento</option>
       </select>
       <input id="inputModal" class="inputType" type="text" placeholder="Description">
       <button class="btnConfirmarModal" onclick="createCard()">Confirmar</button>

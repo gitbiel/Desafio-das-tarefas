@@ -9,8 +9,17 @@ let inputModal = document.getElementById('inputModal');
 let inputTitle = document.getElementById('titleModal');
 let inputSelect = document.getElementById('selectModal');
 let counter = 0;
+
+// contagem de elementos filhos
 const toDoAccount = document.querySelector('#toDo');
 toDoAccount.innerHTML = '0'
+
+// drag and drop
+const columnToDo = document.getElementById("column-todo") 
+const columnDoing = document.getElementById("column-doing") 
+const columnDone = document.getElementById("column-done")
+
+
 function openModal() {
   modal.style.display = "flex";
   toDoList.style.display = "none";
@@ -32,7 +41,7 @@ function createCard() {
 
 
   let newCard = 
-  `<div class="cardCreated">
+  `<div class="cardCreated" draggable="true">
   <div class="column" style="background: ${valorInputSelect[1]};"></div>
   <div class="elements">
     <div class="titleCard">${valorInputTilte}</div>
@@ -59,6 +68,39 @@ function createCard() {
 
   console.log(main.childElementCount);
   closeModal()
+
 }
+
+dragCard = newCard
+
+
+  for(var index of columnToDo){
+      index.addEventListener('dragstart', dragStart)
+      index.addEventListener('dragend', dragEnd)
+  }
+
+  function dragStart(){
+    dragCard = this;
+    setTimeout(() => this.style.display = "none", 0)
+    
+  }
+  function dragEnd(){
+    setTimeout(() => this.style.display = "block", 0)
+    dragCard = null
+  }
+
+  for(DoingDone of dropzone){
+    DoingDone.addEventListener('dragover', dragOver)
+    DoingDone.addEventListener('dragenter', dragEnter)
+    DoingDone.addEventListener('dragleave', dragLeave)
+    DoingDone.addEventListener('drop', Drop)
+  }
+  function Drop(){ this.append(dragCard) }
+     
+  function dragOver(e){e.preventDefault()} 
+     
+  function dragEnter(e){e.preventDefault()}
+     
+  function dragLeave(){ }
 
 console.log(main.childElementCount);

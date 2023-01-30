@@ -18,14 +18,15 @@
           <p class="elementsHeader">/5</p>
         </div>
 
-        <div class="createNewItem" onclick="openModal()">
-          <svg class="iconCreate" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="createNewItem" >
+          <svg onclick="openModal()" class="iconCreate" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="14" height="14" fill="#9AE162"/>
             <rect x="6" y="2" width="2" height="10" fill="white"/>
             <rect x="12" y="6" width="2" height="10" transform="rotate(90 12 6)" fill="white"/>
             </svg>
             <p>New item</p>
-        </div>
+          </div>
+          <div id="column-todo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         <div id="containerToDo" class="containerCard">
         </div>
       </div>
@@ -35,19 +36,21 @@
           <h2 class="elementsHeader">Doing</h2>
           <p class="elementsHeader">0/5</p>
         </div>
+        <div id="column-doing" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
       </div>
       <div class="card">
         <div class="header">
-        <h2 class="elementsHeader">Done</h2>
+          <h2 class="elementsHeader">Done</h2>
         </div>
+        <div id="column-done" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
       </div>
     </div>
   </div>
 
   <div class="backgroundColorModal">
     <div class="modalContainer">
-      <div class="closeModalContainer" onclick="closeModal()">
-        <svg  class="closeModal" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div class="closeModalContainer">
+        <svg onclick="closeModal()" class="closeModal" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="15.981" y="5.56293" width="1.73333" height="14.7333" rx="0.866667" transform="rotate(45 15.981 5.56293)" fill="white"/>
           <rect x="17.2068" y="15.981" width="1.73333" height="14.7333" rx="0.866667" transform="rotate(135 17.2068 15.981)" fill="white"/>
         </svg>
